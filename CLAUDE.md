@@ -45,12 +45,39 @@ The tool uses:
 
 ## Requirements
 
-- Python 3.x
-- Dependencies listed in `requirements.txt`:
-  - scapy
-  - ssl (standard library)
+- Python 3.8 or higher
+- [uv](https://docs.astral.sh/uv/) package manager (recommended)
+- Dependencies:
+  - scapy (for network packet manipulation and capture)
+  - ssl (standard library - included with Python)
 
 ## Installation
+
+This project uses [uv](https://docs.astral.sh/uv/) for fast and reliable dependency management.
+
+### Install uv (if not already installed)
+
+```bash
+# On macOS and Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# On Windows
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+### Install project dependencies
+
+```bash
+# Sync dependencies from pyproject.toml
+uv sync
+
+# Or install in your current environment
+uv pip install -e .
+```
+
+### Alternative: Traditional pip installation
+
+For backwards compatibility, you can still use pip:
 
 ```bash
 pip install -r requirements.txt
