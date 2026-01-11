@@ -41,7 +41,7 @@ Many devices and operating systems require the RADIUS server's certificate to be
 
 The tool uses:
 - **scapy**: For network packet manipulation and capture
-- **ssl**: For certificate extraction and handling
+- **ssl** (built-in Python module): For certificate extraction and handling
 
 ## Requirements
 
