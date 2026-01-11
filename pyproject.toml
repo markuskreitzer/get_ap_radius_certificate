@@ -1,5 +1,5 @@
 [project]
-name = "get-ap-radius-certificate"
+name = "get_ap_radius_certificate"
 version = "0.1.0"
 description = "A Python tool to retrieve RADIUS server certificates from WPA2/WPA3 Enterprise wireless networks"
 readme = "README.md"
